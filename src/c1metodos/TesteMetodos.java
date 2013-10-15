@@ -1,6 +1,6 @@
 package c1metodos;
 
-public class TesteMetodos {
+public class TesteMetodos implements TestInterface1 {
 	
 	public synchronized Integer retrieveUserInfo(int id) { return 1; }
 	// synchronized modifier can be applied only to methods
