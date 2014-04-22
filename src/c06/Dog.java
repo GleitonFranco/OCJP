@@ -1,5 +1,6 @@
 package c06;
 
+import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
@@ -21,13 +22,13 @@ public class Dog implements Serializable {
 	}
 	private void readObject(ObjectInputStream is) //throws IOException, ClassNotFoundException 
 	{
-		try {
-			is.defaultReadObject();
-			theCollar = new Collar(is.readInt());
-		} catch (Exception e) { e.printStackTrace(); }
+			try {
+				is.defaultReadObject();
+				theCollar = new Collar(is.readInt());
+			} catch (ClassNotFoundException e) { e.printStackTrace(); 
+			} catch (IOException e) { e.printStackTrace(); }
 	}
 }
-
 
 
 class Collar {
@@ -35,3 +36,4 @@ class Collar {
 	public Collar(int size) { collarSize = size; }
 	public int getCollarSize() { return collarSize; }
 }
+
