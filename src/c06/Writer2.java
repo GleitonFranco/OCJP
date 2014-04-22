@@ -1,5 +1,6 @@
 package c06;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -34,6 +35,9 @@ public class Writer2 {
 			File f4 = new File(dhome,"testfile.txt");
 			f4.createNewFile();
 			System.out.print(dhome.isDirectory());
+			
+			
+			
 		} catch(IOException e) { }
 	}
 
