@@ -12,7 +12,6 @@ public class SetTest {
 		
 //		Set s = new TreeSet(); 
 		//Vai dar R.T.E.; tipos diferentes nao costumam ser comparable
-		
 		ba[0] = s.add("a");
 		ba[1] = s.add(new Integer(42));
 		ba[2] = s.add("b");
