@@ -1,6 +1,7 @@
 package c07;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -23,6 +24,16 @@ public class SetTest {
 		System.out.println("\n");
 		for(Object o : s)
 			System.out.print(o + " ");
+		
+		
+		
+		Set set = new TreeSet();
+		set.add("2");
+		set.add(3);
+		set.add("1");
+		Iterator it = set.iterator();
+		while (it.hasNext())
+		System.out.print(it.next() + " ");
 	}
 
 }
