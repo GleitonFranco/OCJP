@@ -31,12 +31,12 @@ public class TestThreads {
 		Thread t = new MyThread();
 		Thread t2 = new Thread(t); // idiota mas legal pq toda Thread tb implementa Runnable
 		
-//		To get an actual thread—a new call stack—we still have to start the thread.
-//		start() method is called, the thread is considered to be alive
+//		To get an actual thread — a new call stack — we still have to start the thread.
+//		when start() method is called, the thread is considered to be alive
 //		You start a Thread, not a Runnable.
 //		OBS: Calling a run() method directly goes onto the current call stack rather than at the beginning of a new call stack
 		t.setName("Fred");
-		t.run(); // Legal, but does not start a new thread
+		t.run(); // Legal, but does not start a new thread. It's still in the thread "main"
 		t.start();
 		foo.start();
 		t2.start();
