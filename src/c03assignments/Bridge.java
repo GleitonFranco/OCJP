@@ -1,4 +1,4 @@
-package c03;
+package c03assignments;
 
 public class Bridge {
 	public enum Suits {

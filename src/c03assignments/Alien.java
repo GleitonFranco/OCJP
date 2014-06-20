@@ -1,4 +1,4 @@
-package c03;
+package c03assignments;
 
 //class Alien {
 //	String invade(short ships) { return "a few"; }
