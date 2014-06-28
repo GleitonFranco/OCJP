@@ -21,6 +21,11 @@ public class PrimitiveTests {
 		byte b4 = 3;
 		b4 += 7;// +=, -=, *=, and /= will all put in an implicit cast
 		b4= (byte) (b + 7);		// Won't compile without the cast, since b + 7 results in an int
+		
+		Integer oi = new Integer(44);
+		String s = "a";
+		s += b4;
+		
 	}
 
 }
